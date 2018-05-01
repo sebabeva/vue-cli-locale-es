@@ -1,0 +1,21 @@
+{
+  "name": "vue-cli-locale-es",
+  "version": "0.1.0",
+  "description": "Spanish localization for @vue/cli",
+  "unpkg": "./locales/es.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdiaz/vue-cli-locale-es.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-cli",
+    "locale"
+  ],
+  "author": "Javier Diaz<coderdiaz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderdiaz/vue-cli-locale-es/issues"
+  },
+  "homepage": "https://github.com/coderdiaz/vue-cli-locale-es#readme"
+}
