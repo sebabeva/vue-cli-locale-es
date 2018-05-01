@@ -48,7 +48,7 @@
     },
     "logger-view": {
       "title": "Registros",
-      "empty": "No hay existen registros.",
+      "empty": "No hay registros.",
       "buttons": {
         "clear": "Limpiar registros",
         "scroll": "Desplazar hacía abajo",
@@ -307,7 +307,7 @@
         "close": "Cerrar"
       },
       "command": "Comandos de Script",
-      "parameters": "Parametros",
+      "parameters": "Parámetros",
       "more-info": "Más información",
       "output": "Salida"
     },
@@ -327,8 +327,8 @@
       "open-app": "Abrir aplicación",
       "webpack-status": {
         "Success": "Con éxito",
-        "Failed": "Fallado",
-        "Compiling": "Compilado",
+        "Failed": "Con errores",
+        "Compiling": "Compilando",
         "Invalidated": "Invalidado",
         "Idle": "Inactivo"
       },
@@ -369,10 +369,10 @@
     },
     "tasks": {
       "serve": {
-        "description": "Compila y auto-recarga en desarrollo."
+        "description": "Compilar y auto-recargar en desarrollo."
       },
       "build": {
-        "description": "Compila y minifica para producción."
+        "description": "Compilar y minificar para producción."
       }
     }
   },
