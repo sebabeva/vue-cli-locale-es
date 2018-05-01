@@ -12,7 +12,7 @@
     "vue-cli",
     "locale"
   ],
-  "author": "Javier Diaz<coderdiaz@gmail.com>",
+  "author": "Javier Diaz",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/coderdiaz/vue-cli-locale-es/issues"
