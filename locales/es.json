@@ -14,7 +14,7 @@
         "commit": {
           "title": "Registrar cambios",
           "input": "Introduce un mensaje",
-          "subtitle": "Registrar cambios al repositorio",
+          "subtitle": "Registrar cambios en el repositorio",
           "actions": {
             "commit": "Guardar",
             "cancel": "Cancelar"
@@ -35,22 +35,22 @@
         "tooltips": {
           "parent-folder": "Abrir directorio padre",
           "edit-path": "Modificar dirección de archivo",
-          "favorite": "Seleccionar como favorito",
+          "favorite": "Marcar como favorito",
           "favorite-folders": "Directorios favoritos",
           "refresh": "Actualizar"
         },
-        "placeholder": "Introduce la dirección completa al directorio",
-        "empty": "No hay carpetas favoritas"
+        "placeholder": "Introduce la dirección completa del directorio",
+        "empty": "No hay directorios favoritos"
       }
     },
     "list-item-info": {
       "more-info": "Más información"
     },
     "logger-view": {
-      "title": "Registros",
+      "title": "Actividad",
       "empty": "No hay registros.",
       "buttons": {
-        "clear": "Limpiar registros",
+        "clear": "Limpiar actividad",
         "scroll": "Desplazar hacía abajo",
         "close": "Cerrar"
       }
@@ -75,13 +75,13 @@
     },
     "project-select-list-item": {
       "tooltips": {
-        "favorite": "Seleccionar favorito",
+        "favorite": "Marcar como favorito",
         "delete": "Eliminar"
       }
     },
     "project-plugin-item": {
-      "version": "versión",
-      "latest": "último",
+      "version": "Versión",
+      "latest": "Última versión",
       "official": "Oficial",
       "installed": "Instalado",
       "actions": {
@@ -103,7 +103,7 @@
         "tooltip": "Directorio de trabajo"
       },
       "log": {
-        "tooltip": "Logs<br><i>Clic para activar la actividad de Vue CLI</i>",
+        "tooltip": "Actividad<br><i>Clic para activar la actividad de Vue CLI</i>",
         "empty": "Aún no hay actividad"
       },
       "report-bug": "Reportar un error"
@@ -192,7 +192,7 @@
           },
           "modal": {
             "title": "Cancelar y restaurar la creación de proyecto",
-            "body": "¿Estás seguro que quieres restaurar la creación del proyecto?",
+            "body": "¿Estás seguro que quieres cancelar la creación del proyecto?",
             "buttons": {
               "back": "Ir atrás",
               "clear": "Limpiar proyecto"
@@ -211,7 +211,7 @@
           },
           "modal": {
             "title": "Configurar preset de forma remota",
-            "body": "Disponible pronto..."
+            "body": "Disponible muy pronto..."
           }
         },
         "features": {
@@ -274,7 +274,7 @@
           }
         },
         "diff": {
-          "label": "Archivos cambiados"
+          "label": "Archivos modificados"
         }
       },
       "modal": {
