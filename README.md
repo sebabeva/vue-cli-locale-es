@@ -2,7 +2,7 @@
 
 Spanish localization for @vue/cli
 
--This will be automatically loaded by vue-cli.-
+This will be automatically loaded by vue-cli.
 
 ## :copyright: License
 
