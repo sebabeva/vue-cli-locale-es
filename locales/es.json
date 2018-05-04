@@ -51,7 +51,7 @@
       "empty": "No hay registros.",
       "buttons": {
         "clear": "Limpiar actividad",
-        "scroll": "Desplazar hacía abajo",
+        "scroll": "Desplazar hacia abajo",
         "close": "Cerrar"
       }
     },
@@ -111,7 +111,7 @@
     "terminal-view": {
       "buttons": {
         "clear": "Limpiar consola",
-        "scroll": "Desplazar hacía abajo"
+        "scroll": "Desplazar hacia abajo"
       }
     },
     "view-badge": {
@@ -183,7 +183,7 @@
             },
             "options": {
               "label": "Opciones adicionales",
-              "description": "Sobrescribir directorio de destino si este existe"
+              "description": "Sobrescribir directorio de destino si ya existe"
             }
           },
           "buttons": {
@@ -191,7 +191,7 @@
             "next": "Siguiente"
           },
           "modal": {
-            "title": "Cancelar y restaurar la creación de proyecto",
+            "title": "Cancelar la creación de proyecto",
             "body": "¿Estás seguro que quieres cancelar la creación del proyecto?",
             "buttons": {
               "back": "Ir atrás",
@@ -292,7 +292,7 @@
     },
     "project-configuration-details": {
       "actions": {
-        "cancel": "Cancelar cambios",
+        "cancel": "Cancelar",
         "save": "Guardar cambios",
         "more-info": "Más información"
       }
@@ -329,7 +329,7 @@
         "Success": "Con éxito",
         "Failed": "Con errores",
         "Compiling": "Compilando",
-        "Invalidated": "Invalidado",
+        "Invalidated": "Anulado",
         "Idle": "Inactivo"
       },
       "build-status": {
