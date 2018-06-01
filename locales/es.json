@@ -1,5 +1,9 @@
 {
   "components": {
+    "connection-status": {
+      "disconnected": "Desconectado del servidor UI",
+      "connected": "¡Conectado!"
+    },
     "file-diff": {
       "binary": "El archivo binario no se puede mostrar",
       "actions": {
@@ -106,13 +110,17 @@
         "tooltip": "Actividad<br><i>Clic para activar la actividad de Vue CLI</i>",
         "empty": "Aún no hay actividad"
       },
-      "report-bug": "Reportar un error"
+      "report-bug": "Reportar un error",
+      "translate": "Ayudar con la traducción"
     },
     "terminal-view": {
       "buttons": {
         "clear": "Limpiar consola",
         "scroll": "Desplazar hacia abajo"
       }
+    },
+    "top-bar": {
+      "no-favorites": "No hay proyectos favoritos"
     },
     "view-badge": {
       "labels": {
@@ -122,6 +130,16 @@
           "done": "Completado"
         }
       }
+    }
+  },
+  "cypress": {
+    "tasks": {
+        "test": {
+            "description": "Ejecutar e2e tests con `cypress run`",
+            "headless": "Ejecutar en modo headless sin interfaz gráfica de usuario",
+            "mode": "Especifica el modo en el que el servidor de desarrollo debería ejecutarse",
+            "url": "Ejecuta e2e tests usando la url proporcionada en vez del servidor automático de desarrollo"
+        }
     }
   },
   "mixins": {
@@ -201,6 +219,7 @@
         },
         "presets": {
           "title": "Presets",
+          "default-preset": "Preset por defecto",
           "description":
             "Un preset es una asociación de complementos y configuraciones. Después de que hayas seleccionado las características, tu puedes opcionalmente guardarlo como un preset que puede ser reutilizado en futuros proyecto, sin tener que configurar cada uno de nuevo.",
           "select": "Selecciona un preset",
@@ -209,9 +228,17 @@
             "next": "Siguiente",
             "create": "Crear proyecto"
           },
+          "manual": {
+            "description": "Seleccionar manualmente las características",
+            "name": "Manual"
+          },
           "modal": {
             "title": "Configurar preset de forma remota",
             "body": "Disponible muy pronto..."
+          },
+          "remote": {
+            "description": "Recupera un preset de un repositorio git",
+            "name": "Preset remoto"
           }
         },
         "features": {
@@ -223,6 +250,10 @@
             "previous": "Anterior",
             "next": "Siguiente",
             "create": "Crear proyecto"
+          },
+          "userConfigFiles": {
+            "description": "Usar archivos de configuración específicos (como '.babelrc') en vez de usar 'package.json'.",
+            "name": "Usar archivos de confifuración"
           }
         },
         "configuration": {
@@ -309,7 +340,8 @@
       "command": "Comandos de Script",
       "parameters": "Parámetros",
       "more-info": "Más información",
-      "output": "Salida"
+      "output": "Salida",
+      "parameters-info": "Los parámetros se guardarán cuando la tarea sea ejecutada."
     },
     "about": {
       "title": "Acerca",
@@ -369,10 +401,31 @@
     },
     "tasks": {
       "serve": {
-        "description": "Compilar y auto-recargar en desarrollo."
+        "description": "Compilar y auto-recargar en desarrollo.",
+        "host": "Especificar host",
+        "https": "Usar HTTPS",
+        "mode": "Especificar modo de entorno",
+        "open": "Abrir navegador cuando el servidor comience",
+        "port": "Especificar puerto"
+      },
+      "inspect": {
+        "description": "Inspeccionar el resultado de configuración de webpack",
+        "mode": "Especiificar modo de entorno",
+        "verbose": "Mostrar definiciones de funciones completas en salida"
       },
       "build": {
-        "description": "Compilar y minificar para producción."
+        "description": "Compilar y minificar para producción.",
+        "dest": "Directorio de destino",
+        "mode": "Especificar modo de entorno",
+        "name": "Nombre para el modo librería o componente web (por defector: 'name' en package.json o el nombre del archivo de entrada)",
+        "target": {
+            "app": "Aplicación web",
+            "description": "Objetivo de compilación",
+            "lib": "Librería",
+            "wc": "Componente web",
+            "wc-async": "Componente web asíncrono"
+        },
+        "watch": "Observar cambios"
       }
     }
   },
@@ -386,20 +439,57 @@
         }
       },
       "eslint-extra": {
-        "description": "Configuraciones extra para ESLint"
+        "description": "Configuraciones extra para ESLint",
+        "lintOnSave": {
+          "description": "Verifica el fichero cuando es guardado",
+          "message": "Verificar al guardar"
+        }
       }
     },
     "tasks": {
       "lint": {
-        "description": "Lints y corrección de archivos"
+        "description": "Lints y corrección de archivos",
+        "noFix": "No corregir errores"
       }
+    }
+  },
+  "nightwatch": {
+    "tasks": {
+        "test": {
+            "description": "Ejecutar e2e tests con nightwatch",
+            "url": "Ejecutar e2e tests usando la url proporcionada en vez del servidor automático de desarrollo"
+        }
     }
   },
   "pwa": {
     "config": {
       "pwa": {
-        "description": "Progressive Web App"
-      }
+        "appleMobileWebAppStatusBarStyle": {
+            "description": "Estilo para la barra de estado de una aplicación web en iOS",
+            "message": "Estilo de móviles Apple para la barra de estado"
+        },
+        "backgroundColor": {
+            "description": "Color de fondo usado para la pantalla inicial de la aplicación",
+            "message": "Color de fondo de la pantalla inicial"
+        },
+        "description": "Progressive Web App",
+        "msTileColor": {
+            "description": "Color usado por el icono de la aplicación en Windows",
+            "message": "Color del icono de la aplicación en Windows"
+        },
+        "name": {
+            "description": "Nombre de la aplicación mostrado en la pantalla inicial entre otros sitios. Usado también como el valor para `apple-mobile-web-app-title` meta etiqueta en el HTML generado.",
+            "message": "Nombre de la apliación"
+        },
+        "themeColor": {
+            "description": "Color usado en el tema del navegador",
+            "message": "Tema de color"
+        },
+        "workboxPluginMode": {
+            "description": "Esto le permite elegir entre los dos modos compatibles con el subyacente `workbox-webpack-plugin`",
+            "message": "Modo complemento"
+        }
+    }
     }
   }
 }
