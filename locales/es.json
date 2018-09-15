@@ -255,7 +255,7 @@
               },
               "userConfigFiles": {
                 "description": "Usar archivos de configuración específicos (como '.babelrc') en vez de usar 'package.json'.",
-                "name": "Usar archivos de confifuración"
+                "name": "Usar archivos de configuración"
               }
             },
             "configuration": {
